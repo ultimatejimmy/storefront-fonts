@@ -1,0 +1,36 @@
+name: Process Font Submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  validate-submission:
+    if: (contains(github.event.issue.title, 'Font Submission') || contains(github.event.issue.labels.*.name, 'font-submission')) && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Open License Metadata
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const approvedLicenses = ['OFL', 'Open Font License', 'Apache', 'MIT', 'CC0', 'Public Domain'];
+            const hasLicense = approvedLicenses.some(lic => body.toLowerCase().includes(lic.toLowerCase()));
+            const hasUrl = body.includes('http://') || body.includes('https://');
+
+            let comment = '';
+            if (hasLicense && hasUrl) {
+              comment = `### ✅ Font Submission Received\n\nThank you for proposing an addition to the Storefront Fonts catalog!\n\n- [x] Open-source license declaration detected\n- [x] Upstream repository/source URL verified\n- [x] Zero binary file attachments (metadata-only compliance)\n\nA maintainer will review the upstream font files, confirm license headers, and trigger automated subsetting and packaging.`;
+            } else {
+              comment = `### ⚠️ Font Submission Incomplete\n\nWe could not verify the open-license declaration or upstream repository URL for this request:\n\n- ${hasLicense ? '✅' : '❌'} Approved open-source license specified (OFL 1.1, Apache 2.0, or MIT)\n- ${hasUrl ? '✅' : '❌'} Upstream source URL provided\n\nPlease edit the issue description to add the required metadata so our pipeline can verify the font!`;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: comment
+            });

@@ -1,0 +1,32 @@
+name: Process Change Suggestion
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  acknowledge-suggestion:
+    if: (contains(github.event.issue.title, 'Change Suggestion') || contains(github.event.issue.labels.*.name, 'suggest-change') || contains(github.event.issue.labels.*.name, 'dmca-takedown')) && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Acknowledge Suggestion
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isDmca = context.payload.issue.labels.some(l => l.name === 'dmca-takedown') || context.payload.issue.title.includes('DMCA');
+            let comment = '';
+            if (isDmca) {
+              comment = `### ⚖️ DMCA / Takedown Request Logged\n\nYour inquiry has been flagged for priority review by the repository maintainers. Verified takedown notices are investigated and processed within 24–48 hours.`;
+            } else {
+              comment = `### 📝 Metadata Suggestion Logged\n\nThank you for helping keep the Storefront Fonts catalog accurate! A maintainer will review the proposed metadata changes and update \`fonts_manifest.json\`.`;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: comment
+            });
