@@ -238,13 +238,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <article class="font-card">
           <div>
             <div class="font-card-header">
-              <div class="font-title-wrap">
+              <div class="font-title-row">
                 <h2 class="font-title" style="font-family: '${customFamily}', serif;">${escapeHtml(font.name)}</h2>
-                <span class="font-author">By ${escapeHtml(font.author || font.owner || 'Open Source')}</span>
               </div>
-              <div class="font-meta-badges">
-                <span class="font-badge">${escapeHtml(font.category)}</span>
-                <span class="font-badge license">${escapeHtml(licenseShort)}</span>
+              <div class="font-meta-row">
+                <span class="font-author">By ${escapeHtml(font.author || font.owner || 'Open Source')}</span>
+                <div class="font-meta-badges">
+                  <span class="font-badge">${escapeHtml(font.category)}</span>
+                  <span class="font-badge license">${escapeHtml(licenseShort)}</span>
+                </div>
               </div>
             </div>
 
