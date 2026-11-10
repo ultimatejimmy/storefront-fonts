@@ -168,8 +168,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadedFontFaces = new Set();
   function loadFontFace(fontFamily, previewUrl) {
     if (!previewUrl || loadedFontFaces.has(fontFamily)) return;
+
+    // Fall back to relative path if viewing locally / before GitHub Pages is live
+    let finalUrl = previewUrl;
+    if (window.location.hostname !== 'ultimatejimmy.github.io' && previewUrl.includes('/previews/')) {
+      const idx = previewUrl.indexOf('previews/');
+      if (idx !== -1) {
+        finalUrl = './' + previewUrl.slice(idx);
+      }
+    }
+
     try {
-      const fontFace = new FontFace(fontFamily, `url('${previewUrl}')`);
+      const fontFace = new FontFace(fontFamily, `url('${finalUrl}')`, {
+        weight: '100 900',
+        style: 'normal'
+      });
       fontFace.load().then(loaded => {
         document.fonts.add(loaded);
         loadedFontFaces.add(fontFamily);
@@ -226,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>
             <div class="font-card-header">
               <div class="font-title-wrap">
-                <h2>${escapeHtml(font.name)}</h2>
+                <h2 class="font-title" style="font-family: '${customFamily}', serif;">${escapeHtml(font.name)}</h2>
                 <span class="font-author">By ${escapeHtml(font.author || font.owner || 'Open Source')}</span>
               </div>
               <div class="font-meta-badges">

@@ -344,10 +344,14 @@ body {
   margin-bottom: 0.6rem;
 }
 
-.font-title-wrap h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
+.font-title-wrap h2,
+.font-title {
+  font-size: 1.35rem;
+  font-weight: 500;
   color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.15rem;
+  word-break: break-word;
 }
 
 .font-author {
