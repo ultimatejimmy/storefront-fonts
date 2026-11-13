@@ -25,3 +25,22 @@ All fonts distributed in this catalog are licensed under approved open licenses 
 | **Fast Sans** | jloutsch | Sans-Serif | MIT License | [https://github.com/jloutsch/fast-fonts-for-kindle](https://github.com/jloutsch/fast-fonts-for-kindle) |
 | **Fast Sans Dotted** | jloutsch | Sans-Serif | MIT License | [https://github.com/jloutsch/fast-fonts-for-kindle](https://github.com/jloutsch/fast-fonts-for-kindle) |
 | **Fast Serif** | jloutsch | Serif | MIT License | [https://github.com/jloutsch/fast-fonts-for-kindle](https://github.com/jloutsch/fast-fonts-for-kindle) |
+| **EB Garamond** | Georg Duffner & Octavio Pardo | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/ebgaramond](https://github.com/google/fonts/tree/main/ofl/ebgaramond) |
+| **Crimson Pro** | Jacques Le Bailly | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/crimsonpro](https://github.com/google/fonts/tree/main/ofl/crimsonpro) |
+| **Vollkorn** | Friedrich Althausen | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/vollkorn](https://github.com/google/fonts/tree/main/ofl/vollkorn) |
+| **Alegreya** | Juan Pablo del Peral | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/alegreya](https://github.com/google/fonts/tree/main/ofl/alegreya) |
+| **Spectral** | Production Type | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/spectral](https://github.com/google/fonts/tree/main/ofl/spectral) |
+| **Gelasio** | Eben Sorkin | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/gelasio](https://github.com/google/fonts/tree/main/ofl/gelasio) |
+| **Ibarra Real Nova** | José María Ribagorda & Octavio Pardo | Serif | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/ibarrarealnova](https://github.com/google/fonts/tree/main/ofl/ibarrarealnova) |
+| **Shantell Sans** | Shantell Martin & Arrow Type | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/shantellsans](https://github.com/google/fonts/tree/main/ofl/shantellsans) |
+| **Caveat** | Pablo Impallari | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/caveat](https://github.com/google/fonts/tree/main/ofl/caveat) |
+| **Patrick Hand** | Patrick Wagesreiter | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/patrickhand](https://github.com/google/fonts/tree/main/ofl/patrickhand) |
+| **Comic Neue** | Craig Rozynski | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/comicneue](https://github.com/google/fonts/tree/main/ofl/comicneue) |
+| **Fredoka** | Milena Brandao | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/fredoka](https://github.com/google/fonts/tree/main/ofl/fredoka) |
+| **Fraunces** | Undercase Type | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/fraunces](https://github.com/google/fonts/tree/main/ofl/fraunces) |
+| **IM Fell English** | Igino Marini | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/imfellenglish](https://github.com/google/fonts/tree/main/ofl/imfellenglish) |
+| **Cormorant Garamond** | Christian Thalmann | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/cormorantgaramond](https://github.com/google/fonts/tree/main/ofl/cormorantgaramond) |
+| **Cinzel** | Natanael Gama | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/cinzel](https://github.com/google/fonts/tree/main/ofl/cinzel) |
+| **Fondamento** | Astigmatic | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/fondamento](https://github.com/google/fonts/tree/main/ofl/fondamento) |
+| **MedievalSharp** | Wojciech Kalinowski | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/medievalsharp](https://github.com/google/fonts/tree/main/ofl/medievalsharp) |
+| **UnifrakturMaguntia** | j. 'mach' wust | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/unifrakturmaguntia](https://github.com/google/fonts/tree/main/ofl/unifrakturmaguntia) |
