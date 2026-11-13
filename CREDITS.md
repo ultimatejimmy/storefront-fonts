@@ -44,3 +44,13 @@ All fonts distributed in this catalog are licensed under approved open licenses 
 | **Fondamento** | Astigmatic | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/fondamento](https://github.com/google/fonts/tree/main/ofl/fondamento) |
 | **MedievalSharp** | Wojciech Kalinowski | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/medievalsharp](https://github.com/google/fonts/tree/main/ofl/medievalsharp) |
 | **UnifrakturMaguntia** | j. 'mach' wust | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/unifrakturmaguntia](https://github.com/google/fonts/tree/main/ofl/unifrakturmaguntia) |
+| **Uncial Antiqua** | Astigmatic | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/uncialantiqua](https://github.com/google/fonts/tree/main/ofl/uncialantiqua) |
+| **Metamorphous** | Sorkin Type | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/metamorphous](https://github.com/google/fonts/tree/main/ofl/metamorphous) |
+| **Almendra** | Ana Sanfilippo | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/almendra](https://github.com/google/fonts/tree/main/ofl/almendra) |
+| **Almendra Display** | Ana Sanfilippo | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/almendradisplay](https://github.com/google/fonts/tree/main/ofl/almendradisplay) |
+| **Eagle Lake** | Astigmatic | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/eaglelake](https://github.com/google/fonts/tree/main/ofl/eaglelake) |
+| **Macondo Swash Caps** | John Vargas Beltrán | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/macondoswashcaps](https://github.com/google/fonts/tree/main/ofl/macondoswashcaps) |
+| **Berkshire Swash** | Astigmatic | Display | SIL Open Font License | [https://github.com/google/fonts/tree/main/ofl/berkshireswash](https://github.com/google/fonts/tree/main/ofl/berkshireswash) |
+| **Junicode** | Peter S. Baker | Serif | SIL Open Font License | [https://github.com/psb1558/Junicode-font](https://github.com/psb1558/Junicode-font) |
+| **Basteleur** | Keussel (Velvetyne) | Display | SIL Open Font License | [https://gitlab.com/velvetyne/basteleur](https://gitlab.com/velvetyne/basteleur) |
+| **Avara** | Raphaël Bastide et al. (Velvetyne) | Display | SIL Open Font License | [https://gitlab.com/velvetyne/avara](https://gitlab.com/velvetyne/avara) |
